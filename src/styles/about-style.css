@@ -1,0 +1,119 @@
+.about-section{
+    background-color: #FFA89E;
+    display: flex;
+    width: 100%; 
+}
+.about-header{
+    font-size: 30px;
+    text-align: center;
+}
+.about-card{
+    background-color: #ffffff;
+    width: 80%;
+    height: 100%;
+    padding-bottom: 3%;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    border-radius: 15px;
+    box-shadow: 1px 1px 6px #1a1717;
+}
+.card-top{
+    width: 100%;
+    height: 400px;
+    background-image: url('../assest//images/people-harvesting-fresh-apples-from-the-farm-4724563-3948908.webp');
+    background-position: center;
+    background-size: contain;
+    background-repeat: no-repeat;
+
+}
+.card-bottom{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+}
+.card-bottom-left{ 
+    display: flex;
+    margin-top: 3%;
+    border-radius: 10px;
+    flex-direction: row;
+    box-shadow: 1px 1px 6px #1a1717;
+    padding: 30px;
+    transition: all 1s ease-in-out;
+}
+.location-pin{
+    background-image: url('../assest/images/505-5055502_simple-location-map-pin-icon3-red-free-vector.png');
+    width: 100px;
+    height: 100px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.address{
+    font-size: 25x;
+    text-align: start;
+}
+.card-bottom-left:hover{
+    background-image: linear-gradient(to right bottom, #ffffff, #f7f5f5 50%, #797474 75%, #797474 75%);
+}
+.card-bottom-right{
+    display: flex;
+    margin-top: 3%;
+    margin-left: 2%;
+    width: 50%;
+    flex-direction: column;
+}
+.phone-wrap{
+    background-color: #2eac71; 
+    flex-direction: row;
+    box-shadow: 1px 1px 6px #1a1717;
+    display: flex;
+    padding: 5px;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 8px;
+    transition: all 1s ease-in-out;
+}
+.phone-icon{
+    background-image: url('../assest/images/[CITYPNG.COM]HD\ Dark\ Orange\ Round\ Circle\ Phone\ Icon\ PNG\ -\ 1024x1024.png');
+    width: 80px;
+    height: 80px;
+    margin-right: 20%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.phone-number{
+    font-size: 28px;
+    color: #ffffff;
+}
+.email-wrap{
+    background-color: #692eac; 
+    flex-direction: row;
+    box-shadow: 1px 1px 6px #1a1717;
+    display: flex;
+    margin-top: 20px;
+    padding: 5px;
+    flex-direction: row;
+    align-items: center;
+    border-radius: 8px;
+    transition: all 1s ease-in-out;
+}
+.email-icon{
+    background-image: url('../assest/images/pngimg.com\ -\ email_PNG5.png');
+    width: 80px;
+    height: 80px;
+    margin-right: 20%;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+.email-number{
+    font-size: 28px;
+    color: #ffffff;
+}
+.about-us{
+    margin-left: 10%;
+    margin-right: 10%;
+    font-size: 20px;
+    font-weight: 400;
+    margin-top: 3%;
+}

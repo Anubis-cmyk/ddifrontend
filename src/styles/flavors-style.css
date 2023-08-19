@@ -1,0 +1,133 @@
+.flavor-section{
+    background-color: #FFA89E;
+    display: flex;
+    width: 100%;
+    height: 100vh;
+}
+.flaover-card-wrapper{
+    display: flex;
+    
+    background-image: url('../assest/images/fruits-composition-concept_118813-10683.jpg');
+    width: 100%; 
+}
+.flavor-card{
+    margin: 2%;
+    margin-left: auto;
+    margin-right: auto;
+    background-color: #FFA89E;
+    border-radius: 15px;
+    box-shadow: 1px 1px 6px #161515;
+    width: 80%; 
+}
+.card-item{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.card-item-left{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    width: 70%;
+}
+.card-item-friut{
+    z-index: 0;
+    width: 50%;
+    position: absolute;
+    filter: opacity(0.5);
+}
+.card-item-name-purple{
+    background-color: #a02ea069;
+    font-size: 30px;
+    font-weight: 500;
+    z-index: 2;
+    text-shadow: #aa8888 1px 1px 6px;
+    color: #090a09;
+    border-radius: 0px 15px 0px 0px;
+    text-align: start;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.card-item-name-green{
+    background-color: #2ea07469;
+    font-size: 30px;
+    font-weight: 500;
+    z-index: 2;
+    text-shadow: #aa8888 1px 1px 6px;
+    color: #090a09;
+    border-radius: 0px 15px 0px 0px;
+    text-align: start;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.card-item-name-red{
+    background-color: #a02e2e69;
+    font-size: 30px;
+    font-weight: 500;
+    z-index: 2;
+    text-shadow: #aa8888 1px 1px 6px;
+    color: #090a09;
+    border-radius: 0px 15px 0px 0px;
+    text-align: start;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.card-item-description-red{ 
+    background-color: #a02e2e69;
+    font-size: 25px;
+    border-radius: 0px 0px 15px 0px;
+    font-weight: 500;
+    text-align: start;
+    z-index: 2;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.card-item-description-green{
+    background-color: #2ea07469;
+    font-size: 25px;
+    border-radius: 0px 0px 15px 0px;
+    font-weight: 500;
+    text-align: start;
+    z-index: 2;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.card-item-description-purple{
+    background-color: #a02ea069;
+    font-size: 25px;
+    border-radius: 0px 0px 15px 0px;
+    font-weight: 500;
+    text-align: start;
+    z-index: 2;
+    padding-top: 10px;
+    padding-bottom: 20px;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.card-item-right{
+    position: relative;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding-top: 10px;
+    padding-bottom: 10px;
+    width: 30%;
+}
+.cart-item-product{
+    width: 30%;
+}
+
+.flavor-header{
+    font-size: 35px;
+}
