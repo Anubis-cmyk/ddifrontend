@@ -15,14 +15,14 @@ import pear from '../assest/images/PEAR.png'
 import naturalFriut from '../assest/images/fruits-placard-background-vector-round-shape-wallpaper-of-natural-fruit-icons-watermelon-grape-pineapple-apricot-mango-avocado-pear-apple-plum-2ECWDR0.jpg'
 import cardImage from '../assest/images/set-of-fruit-carbonated-drinks-strawberry-pineapple-orange-pear-flat-illustration-on-a-white-background-vector.jpg';
 import { animations,AnimateOnChange } from 'react-animation'
-import { useEffect, useState } from "react";
-import ScrollAnimation from 'react-animate-on-scroll';
+import { useEffect, useState } from "react"; 
 import axios from "axios";
 import { APPURL } from "../constant/const"; 
 import HeroSection from "../components/HeroSection/HeroSection";
 import ShopItem from "../components/ShopItem/ShopItem";
 
 const ShopScreen = () =>{
+    const ScrollAnimation = require('react-animate-on-scroll').default;
     const heroArray =[{
         itemId:0,
         itemName:"Apple",

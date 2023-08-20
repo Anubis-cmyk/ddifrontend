@@ -35,8 +35,7 @@ const AboutScreen = () =>{
         itemName:"Pear",
         ItemImage:image3,
         itemFriut:pear
-    }]
-    const [item,setItem] = useState(heroArray[2])
+    }] 
 
     return(
         <div className="main-container">
