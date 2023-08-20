@@ -20,10 +20,10 @@ import axios from "axios";
 import { APPURL } from "../constant/const"; 
 import HeroSection from "../components/HeroSection/HeroSection";
 import ShopItem from "../components/ShopItem/ShopItem";
+import ScrollAnimation from 'react-animate-on-scroll';
 
 const ShopScreen = () =>{
-    const ScrollAnimation = require('react-animate-on-scroll').default;
-    const heroArray =[{
+      const heroArray =[{
         itemId:0,
         itemName:"Apple",
         ItemImage:image1,
