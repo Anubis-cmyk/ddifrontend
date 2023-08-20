@@ -1,8 +1,7 @@
-import ScrollAnimation from "react-animate-on-scroll";
 
 const ShopItem =(props)=>{
     return(
-        <ScrollAnimation key={props.itemName} animateIn="fadeInUp" duration='2s' className="list-item">
+        <div key={props.itemName} animateIn="fadeInUp" duration='2s' className="list-item">
             <div className="list-item-image-wrap">
                 <img src={props.itemImage} className="list-item-image"/>
             </div>
@@ -14,7 +13,7 @@ const ShopItem =(props)=>{
                 </div>
                     <button className="list-item-button">Buy</button>
             </div>
-        </ScrollAnimation> 
+        </div> 
     )
 }
 
