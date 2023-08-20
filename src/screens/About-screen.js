@@ -17,6 +17,7 @@ import cardImage from '../assest/images/set-of-fruit-carbonated-drinks-strawberr
 import { animations,AnimateOnChange } from 'react-animation'
 import { useEffect, useState } from "react";
 import ScrollAnimation from 'react-animate-on-scroll';
+import HeroSection from "../components/HeroSection/HeroSection";
 
 const AboutScreen = () =>{
     const heroArray =[{
@@ -42,35 +43,7 @@ const AboutScreen = () =>{
             <div className="navigetion-bar">
                 <NavigationBar />
             </div>
-            <section className="hero-section green">
-            <div className="hero-wrapper green">
-                <AnimateOnChange 
-                 animationIn="slideIn"
-                 animationOut="slideIn"
-                 durationOut={500}
-                 className="hero-item-name"
-                >
-                    {item.itemName}
-                </AnimateOnChange>
-                
-                <AnimateOnChange  
-                 animationOut="slideOut"
-                 durationOut={500}
-                 className="hero-item-fruit"
-                >
-                  <img className="" src={item.itemFriut}/>
-                </AnimateOnChange>
-                <div className="hero-item-can-wrap">
-                <AnimateOnChange 
-                 animationIn="popIn"
-                 durationOut={500}
-                 className="hero-item-can-wrap"
-                >
-                   <img className="hero-item-can" src={item.ItemImage} />
-                </AnimateOnChange>
-                </div>
-            </div>
-            </section>
+            <HeroSection itemName={heroArray[2].itemName} itemImage={heroArray[2].itemImage} itemFriut={heroArray[2].itemFriut}/>
             <section id="about-section" className="about-section">
                <div className="about-card">
                     <ScrollAnimation animateIn="fadeIn" duration='2s' className="about-header">About-us</ScrollAnimation>

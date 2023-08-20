@@ -19,6 +19,8 @@ import { useEffect, useState } from "react";
 import ScrollAnimation from 'react-animate-on-scroll';
 import axios from "axios";
 import { APPURL } from "../constant/const"; 
+import HeroSection from "../components/HeroSection/HeroSection";
+import ShopItem from "../components/ShopItem/ShopItem";
 
 const ShopScreen = () =>{
     const heroArray =[{
@@ -67,35 +69,7 @@ const ShopScreen = () =>{
             <div className="navigetion-bar">
                 <NavigationBar />
             </div>
-            <section className="hero-section green">
-            <div className="hero-wrapper green">
-                <AnimateOnChange 
-                 animationIn="slideIn"
-                 animationOut="slideIn"
-                 durationOut={500}
-                 className="hero-item-name"
-                >
-                    {item.itemName}
-                </AnimateOnChange>
-                
-                <AnimateOnChange  
-                 animationOut="slideOut"
-                 durationOut={500}
-                 className="hero-item-fruit"
-                >
-                  <img className="" src={item.itemFriut}/>
-                </AnimateOnChange>
-                <div className="hero-item-can-wrap">
-                <AnimateOnChange 
-                 animationIn="popIn"
-                 durationOut={500}
-                 className="hero-item-can-wrap"
-                >
-                   <img className="hero-item-can" src={item.ItemImage} />
-                </AnimateOnChange>
-                </div>
-            </div>
-            </section>
+           <HeroSection itemName={heroArray[1].itemName} itemImage={heroArray[1].itemImage} itemFriut={heroArray[1].itemFriut}/>
             <section id="shop-section" className="shop-section">
                 <div className="shop-container">
                 <div className="shop-title">
@@ -105,19 +79,7 @@ const ShopScreen = () =>{
                     
                         {items.map((item,index)=>{
                             return(
-                                <ScrollAnimation key={index} animateIn="fadeInUp" duration='2s' className="list-item">
-                                    <div className="list-item-image-wrap">
-                                        <img src={item.itemImage} className="list-item-image"/>
-                                    </div>
-                                    <div className="list-item-description-wrapper red">
-                                        <div className="list-item-name">{item.itemName}</div>
-                                        <div className="list-item-price">{item.itemPrice}</div>
-                                        <div className="list-item-description">
-                                        This Homemade Green Apple and Lime Soda is a much healthier option for many reasons. It's hydrating, naturally sweet, and made with nutritious, whole-food ingredients that offer immune-supporting and detoxifying properties.
-                                        </div>
-                                        <button className="list-item-button">Buy</button>
-                                    </div>
-                                </ScrollAnimation> 
+                                <ShopItem itemName={item.itemName} itemPrice={item.itemPrice} itemDescription={item.itemDescription} itemImage={item.itemImage} key={index}/>   
                             )
                         }
                         )}

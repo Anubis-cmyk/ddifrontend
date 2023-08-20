@@ -14,6 +14,7 @@ import { animations,AnimateOnChange } from 'react-animation'
 import { useEffect, useState } from "react";
 import HomeListItem from "../components/HomeItem/HomeItem";
 import ScrollAnimation from 'react-animate-on-scroll';
+import HeroSection from "../components/HeroSection/HeroSection";
 
 const HomeScreen = () =>{
     const heroArray =[{
@@ -39,35 +40,8 @@ const HomeScreen = () =>{
             <div className="navigetion-bar">
                 <NavigationBar />
             </div>
-            <section className="hero-section">
-            <div className="hero-wrapper">
-                <AnimateOnChange 
-                 animationIn="slideIn"
-                 animationOut="slideIn"
-                 durationOut={500}
-                 className="hero-item-name"
-                >
-                    {item.itemName}
-                </AnimateOnChange>
-                
-                <AnimateOnChange  
-                 animationOut="slideOut"
-                 durationOut={500}
-                 className="hero-item-fruit"
-                >
-                  <img className="" src={item.itemFriut}/>
-                </AnimateOnChange>
-                <div className="hero-item-can-wrap">
-                <AnimateOnChange 
-                 animationIn="popIn"
-                 durationOut={500}
-                 className="hero-item-can-wrap"
-                >
-                   <img className="hero-item-can" src={item.ItemImage} />
-                </AnimateOnChange>
-                </div>
-            </div>
-            </section>
+            <HeroSection itemName={heroArray[0].itemName} itemImage={heroArray[0].itemImage} itemFriut={heroArray[0].itemFriut}/>
+            
             <ScrollAnimation animateIn="fadeIn" duration='1.5s' id="body">
                 <ScrollAnimation animateIn="backInDown" className="item-section">
                     <div className="item-left-section">

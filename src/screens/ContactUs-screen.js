@@ -19,6 +19,7 @@ import { useEffect, useState } from "react";
 import ScrollAnimation from 'react-animate-on-scroll';
 import axios from "axios"; 
 import { APPURL } from "../constant/const";
+import HeroSection from "../components/HeroSection/HeroSection";
 
 const AboutScreen = () =>{
     const heroArray =[{
@@ -124,35 +125,7 @@ const AboutScreen = () =>{
             <div className="navigetion-bar">
                 <NavigationBar />
             </div>
-            <section className="hero-section green">
-            <div className="hero-wrapper green">
-                <AnimateOnChange 
-                 animationIn="slideIn"
-                 animationOut="slideIn"
-                 durationOut={500}
-                 className="hero-item-name"
-                >
-                    {item.itemName}
-                </AnimateOnChange>
-                
-                <AnimateOnChange  
-                 animationOut="slideOut"
-                 durationOut={500}
-                 className="hero-item-fruit"
-                >
-                  <img className="" src={item.itemFriut}/>
-                </AnimateOnChange>
-                <div className="hero-item-can-wrap">
-                <AnimateOnChange 
-                 animationIn="popIn"
-                 durationOut={500}
-                 className="hero-item-can-wrap"
-                >
-                   <img className="hero-item-can" src={item.ItemImage} />
-                </AnimateOnChange>
-                </div>
-            </div>
-            </section>
+            <HeroSection itemName={heroArray[0].itemName} itemImage={heroArray[0].itemImage} itemFriut={heroArray[0].itemFriut}/>
             <section id="contact-section" className="contact-section">
                <ScrollAnimation animateIn="flipInX" duration='2s' className="contactus-card">
                     <div className="contact-us-banner"></div>
